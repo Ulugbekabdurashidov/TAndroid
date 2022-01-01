@@ -1,0 +1,123 @@
+{
+  "appInfo" : {
+    "build" : "203.7717.56.2031.7935034",
+    "buildDate" : "Sun, 21 Nov 2021 00:35:36 -0500",
+    "productCode" : "AI",
+    "generated" : "Fri, 31 Dec 2021 22:06:27 -0500",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o 11.0.10 11.0.10+0-b96-7249189"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 1342177280,
+    "numberOfProcessors" : 16,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "HelloWord",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 3,
+    "totalNumberOfUpToDateFiles" : 0,
+    "times" : {
+      "totalUpdatingTime" : "26 ms",
+      "indexingTime" : "26 ms",
+      "updatingStart" : "Fri, 31 Dec 2021 22:06:27 -0500",
+      "updatingEnd" : "Fri, 31 Dec 2021 22:06:27 -0500",
+      "wasInterrupted" : false
+    },
+    "numberOfIndexingThreads" : 0,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalIndexingTime" : "96.4%",
+      "partOfTotalContentLoadingTime" : "82.3%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "234.96 kB",
+      "indexingSpeed" : "9.09 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "234.96 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalIndexingTime" : "3.6%",
+      "partOfTotalContentLoadingTime" : "17.7%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "7.18 kB",
+      "indexingSpeed" : "7.48 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "7.18 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "62.0%",
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "242.14 kB",
+      "indexingSpeed" : "14.58 MB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "29.8%",
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "242.14 kB",
+      "indexingSpeed" : "30.31 MB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "7.8%",
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "242.14 kB",
+      "indexingSpeed" : "115.57 MB/s"
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "7.18 kB",
+      "indexingSpeed" : "67.63 MB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfFiles" : 3,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : "26 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "234.96 kB",
+        "partOfTotalIndexingTime" : "96.4%",
+        "partOfTotalContentLoadingTime" : "82.3%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "7.18 kB",
+        "partOfTotalIndexingTime" : "3.6%",
+        "partOfTotalContentLoadingTime" : "17.7%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "TodoIndex",
+        "numberOfFiles" : 3,
+        "numberOfFilesIndexedByExtensions" : 0,
+        "partOfTotalIndexingTime" : "62.0%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "numberOfFiles" : 3,
+        "numberOfFilesIndexedByExtensions" : 0,
+        "partOfTotalIndexingTime" : "29.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "numberOfFiles" : 3,
+        "numberOfFilesIndexedByExtensions" : 0,
+        "partOfTotalIndexingTime" : "7.8%"
+      } ],
+      "fastIndexers" : [ "json.file.root.values" ]
+    } ]
+  }
+}

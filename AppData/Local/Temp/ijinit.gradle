@@ -1,0 +1,74 @@
+import org.gradle.api.internal.project.ProjectInternal
+import org.gradle.tooling.provider.model.ToolingModelBuilderRegistry
+import org.gradle.util.GradleVersion
+import org.jetbrains.plugins.gradle.tooling.internal.ExtraModelBuilder
+
+import java.util.concurrent.CopyOnWriteArrayList
+
+initscript {
+  dependencies {
+    classpath files(["C:/Program Files/Android/Android Studio/plugins/gradle/lib/gradle-api-impldep-6.8.jar","C:/Program Files/Android/Android Studio/lib/intellij-deps-fastutil-8.4.1-4.jar","C:/Program Files/Android/Android Studio/lib/util.jar","C:/Program Files/Android/Android Studio/lib/trove4j.jar","C:/Program Files/Android/Android Studio/lib/kotlin-stdlib-1.4.32.jar","C:/Program Files/Android/Android Studio/plugins/android/lib/android-extensions-ide.jar","C:/Program Files/Android/Android Studio/lib/gson-2.8.6.jar","C:/Users/gbadh/AppData/Roaming/Google/AndroidStudio2020.3/plugins/Kotlin/lib/kotlin-compiler-plugins-lombok.jar","C:/Program Files/Android/Android Studio/plugins/gradle/lib/gradle-tooling-extension-api.jar","C:/Users/gbadh/AppData/Roaming/Google/AndroidStudio2020.3/plugins/Kotlin/lib/kotlin-compiler-plugins-annotation-based-compiler-support.jar","C:/Program Files/Android/Android Studio/plugins/gradle/lib/gradle-tooling-extension-impl.jar","C:/Users/gbadh/AppData/Roaming/Google/AndroidStudio2020.3/plugins/Kotlin/lib/kotlin-gradle-gradle-tooling.jar","C:/Program Files/Android/Android Studio/lib/external-system-rt.jar","C:/Program Files/Android/Android Studio/lib/ion-java-1.6.2-3.jar"])
+  }
+}
+
+apply plugin: JetGradlePlugin
+
+class JetGradlePlugin implements Plugin<Gradle> {
+  void apply(Gradle gradle) {
+    def processor = new RegistryProcessor()
+    gradle.addProjectEvaluationListener(processor)
+    def projectEvaluationIsNotCalledForIncludedBuilds = GradleVersion.current() >= GradleVersion.version("3.1") &&
+                                                        GradleVersion.current() < GradleVersion.version("4.0")
+    if (projectEvaluationIsNotCalledForIncludedBuilds) {
+      gradle.rootProject {
+        it.afterEvaluate {
+          gradle.includedBuilds.each { included ->
+            // included builds should be configured by now, so calling `configuredBuild` should be safe
+            def toolingRegistry = (ToolingModelBuilderRegistry)included.configuredBuild.services.get(ToolingModelBuilderRegistry.class)
+            processor.process(toolingRegistry)
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Adds a single extra model builder instance for each root of ToolingModelBuilderRegistry hierarchy<br>
+ * Thread safe.
+ */
+class RegistryProcessor implements ProjectEvaluationListener {
+  def extraModelBuilderInstance =
+    GradleVersion.current() >= GradleVersion.version("4.4")
+      ? ExtraModelBuilder.class.classLoader.loadClass(ExtraModelBuilder.class.typeName + "\$ForGradle44").newInstance()
+      : new ExtraModelBuilder();
+
+  CopyOnWriteArrayList<ToolingModelBuilderRegistry> processedRegistries = new CopyOnWriteArrayList<ToolingModelBuilderRegistry>()
+
+  @Override
+  void beforeEvaluate(Project project) {
+    def registry = (ToolingModelBuilderRegistry)((ProjectInternal)project).services.get(ToolingModelBuilderRegistry.class)
+    process(registry)
+  }
+
+  void process(ToolingModelBuilderRegistry registry) {
+    ToolingModelBuilderRegistry rootRegistry = registry
+    while (rootRegistry.hasProperty('parent') && rootRegistry.parent != null) {
+      rootRegistry = rootRegistry.parent
+    }
+
+    boolean alreadySeen = !processedRegistries.addIfAbsent(rootRegistry)
+    if (alreadySeen || extraModelBuilderIsRegistered(rootRegistry)) {
+      return
+    }
+    rootRegistry.register(extraModelBuilderInstance)
+  }
+
+  private static boolean extraModelBuilderIsRegistered(registry) {
+    registry.hasProperty('builders') && registry.builders instanceof Collection &&
+    (registry.builders as Collection).find { it instanceof ExtraModelBuilder } != null
+  }
+
+  @Override
+  void afterEvaluate(Project project, ProjectState state) {  }
+}

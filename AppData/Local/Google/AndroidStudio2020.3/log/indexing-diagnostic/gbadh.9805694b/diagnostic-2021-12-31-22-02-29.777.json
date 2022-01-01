@@ -1,0 +1,142 @@
+{
+  "appInfo" : {
+    "build" : "203.7717.56.2031.7935034",
+    "buildDate" : "Sun, 21 Nov 2021 00:35:36 -0500",
+    "productCode" : "AI",
+    "generated" : "Fri, 31 Dec 2021 22:02:29 -0500",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o 11.0.10 11.0.10+0-b96-7249189"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 1342177280,
+    "numberOfProcessors" : 16,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "HelloWord",
+    "numberOfFileProviders" : 1,
+    "totalNumberOfFiles" : 7,
+    "totalNumberOfUpToDateFiles" : 0,
+    "times" : {
+      "totalUpdatingTime" : "64 ms",
+      "indexingTime" : "64 ms",
+      "updatingStart" : "Fri, 31 Dec 2021 22:02:29 -0500",
+      "updatingEnd" : "Fri, 31 Dec 2021 22:02:29 -0500",
+      "wasInterrupted" : false
+    },
+    "numberOfIndexingThreads" : 0,
+    "totalStatsPerFileType" : [ {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalIndexingTime" : "99.2%",
+      "partOfTotalContentLoadingTime" : "17.2%",
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : "543.5 kB",
+      "indexingSpeed" : "5.57 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "543.5 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "JSON",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "3.2%",
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : "4.63 kB",
+      "indexingSpeed" : "8.38 MB/s",
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4.63 kB",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalIndexingTime" : "< 1%",
+      "partOfTotalContentLoadingTime" : "79.6%",
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : "0 B",
+      "indexingSpeed" : "0 B/s",
+      "biggestContributors" : [ {
+        "providerName" : "Refreshed files",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "0 B",
+        "partOfTotalIndexingTimeOfThisFileType" : "100.0%"
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : "74.6%",
+      "totalNumberOfFiles" : 6,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "548.13 kB",
+      "indexingSpeed" : "7.47 MB/s"
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : "17.8%",
+      "totalNumberOfFiles" : 6,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "548.13 kB",
+      "indexingSpeed" : "31.34 MB/s"
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : "7.5%",
+      "totalNumberOfFiles" : 6,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "548.13 kB",
+      "indexingSpeed" : "74.23 MB/s"
+    }, {
+      "indexId" : "json.file.root.values",
+      "partOfTotalIndexingTime" : "< 1%",
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : "4.63 kB",
+      "indexingSpeed" : "87.56 MB/s"
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "Refreshed files",
+      "totalNumberOfFiles" : 7,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : "64 ms",
+      "statsPerFileType" : [ {
+        "fileType" : "PLAIN_TEXT",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : "543.5 kB",
+        "partOfTotalIndexingTime" : "99.2%",
+        "partOfTotalContentLoadingTime" : "17.2%"
+      }, {
+        "fileType" : "JSON",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : "4.63 kB",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "3.2%"
+      }, {
+        "fileType" : "textmate",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : "0 B",
+        "partOfTotalIndexingTime" : "< 1%",
+        "partOfTotalContentLoadingTime" : "79.6%"
+      } ],
+      "statsPerIndexer" : [ {
+        "indexId" : "TodoIndex",
+        "numberOfFiles" : 6,
+        "numberOfFilesIndexedByExtensions" : 0,
+        "partOfTotalIndexingTime" : "74.6%"
+      }, {
+        "indexId" : "Trigram.Index",
+        "numberOfFiles" : 6,
+        "numberOfFilesIndexedByExtensions" : 0,
+        "partOfTotalIndexingTime" : "17.8%"
+      }, {
+        "indexId" : "IdIndex",
+        "numberOfFiles" : 6,
+        "numberOfFilesIndexedByExtensions" : 0,
+        "partOfTotalIndexingTime" : "7.5%"
+      } ],
+      "fastIndexers" : [ "json.file.root.values" ]
+    } ]
+  }
+}

@@ -1,0 +1,8 @@
+initscript {
+    dependencies {
+        classpath files(['C:\\Program Files\\Android\\Android Studio\\plugins\\android\\lib\\android.jar', 'C:\\Program Files\\Android\\Android Studio\\plugins\\android\\lib\\android.jar', 'C:\\Program Files\\Android\\Android Studio\\lib\\kotlin-stdlib-1.4.32.jar'])
+    }
+}
+allprojects {
+    apply plugin: com.android.ide.gradle.model.builder.AndroidStudioToolingPlugin
+}

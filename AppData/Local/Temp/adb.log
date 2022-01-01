@@ -1,0 +1,34 @@
+--- adb starting (pid 36116) ---
+adb I 12-28 15:52:12 36116 29920 main.cpp:63] Android Debug Bridge version 1.0.41
+adb I 12-28 15:52:12 36116 29920 main.cpp:63] Version 31.0.3-7562133
+adb I 12-28 15:52:12 36116 29920 main.cpp:63] Installed as C:\Users\gbadh\AppData\Local\Android\Sdk\platform-tools\adb.exe
+adb I 12-28 15:52:12 36116 29920 main.cpp:63] 
+adb I 12-28 15:52:12 36116 29920 auth.cpp:417] adb_auth_init...
+adb I 12-28 15:52:12 36116 29920 auth.cpp:152] loaded new key from 'C:\Users\gbadh\.android\adbkey' with fingerprint 8701A00CC0A01D561FC344E41FD77C1A886EBFF50DC84EAC6F588D2CD8AC817A
+adb I 12-28 16:15:52 36116 37652 transport.cpp:333] emulator-5554: read thread spawning
+adb I 12-28 16:15:52 36116 33120 transport.cpp:305] emulator-5554: write thread spawning
+adb I 12-28 16:16:21 36116 29920 transport.cpp:1596] fetching keys for transport emulator-5554
+adb I 12-28 16:16:21 36116 29920 auth.cpp:469] Calling send_auth_response
+adb I 12-28 16:16:21 36116 29920 adb.cpp:175] emulator-5554: offline
+adb I 12-28 16:16:42 36116 37652 transport.cpp:337] emulator-5554: read failed: connection reset
+adb I 12-28 16:16:42 36116 37652 transport.cpp:1198] emulator-5554: connection terminated: read failed
+adb I 12-28 16:16:42 36116 29920 adb.cpp:175] emulator-5554: offline
+adb I 12-28 16:16:42 36116 29920 transport.cpp:911] destroying transport emulator-5554
+adb I 12-28 16:16:42 36116 29920 transport.cpp:405] BlockingConnectionAdapter(emulator-5554): stopping
+adb I 12-28 16:16:42 36116 29920 transport.cpp:423] BlockingConnectionAdapter(emulator-5554): stopped
+adb I 12-28 16:16:42 36116 29920 transport.cpp:292] BlockingConnectionAdapter(emulator-5554): destructing
+adb I 12-28 16:16:42 36116 29920 transport.cpp:398] BlockingConnectionAdapter(emulator-5554): already stopped
+adb I 12-28 16:20:35 36116 25020 transport.cpp:333] emulator-5554: read thread spawning
+adb I 12-28 16:20:35 36116  8324 transport.cpp:305] emulator-5554: write thread spawning
+adb I 12-28 16:20:37 36116 29920 transport.cpp:1596] fetching keys for transport emulator-5554
+adb I 12-28 16:20:37 36116 29920 auth.cpp:469] Calling send_auth_response
+adb I 12-28 16:20:37 36116 29920 adb.cpp:175] emulator-5554: offline
+adb I 12-29 18:58:36 36116 25020 transport.cpp:337] emulator-5554: read failed: connection reset
+adb I 12-29 18:58:36 36116 25020 transport.cpp:1198] emulator-5554: connection terminated: read failed
+adb I 12-29 18:58:36 36116 29920 adb.cpp:175] emulator-5554: offline
+adb I 12-29 18:58:36 36116 29920 transport.cpp:911] destroying transport emulator-5554
+adb I 12-29 18:58:36 36116 29920 transport.cpp:405] BlockingConnectionAdapter(emulator-5554): stopping
+adb I 12-29 18:58:36 36116 29920 transport.cpp:423] BlockingConnectionAdapter(emulator-5554): stopped
+adb I 12-29 18:58:36 36116 29920 transport.cpp:292] BlockingConnectionAdapter(emulator-5554): destructing
+adb I 12-29 18:58:36 36116 29920 transport.cpp:398] BlockingConnectionAdapter(emulator-5554): already stopped
+adb W 12-29 18:58:37 36116 29920 sockets.cpp:279] timeout expired while flushing socket, closing
