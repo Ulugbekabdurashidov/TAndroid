@@ -2,7 +2,7 @@
 ## TANdroid
 
 ### App Description
-`TODO://` Android Development Course Prework: App that change name color when push button is triggered.
+`TODO://` Android Development Course Prework: App that change text name color when click here to change color button is triggered.
 
 
 ### App Walk-though
