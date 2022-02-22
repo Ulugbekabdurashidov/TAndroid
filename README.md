@@ -76,24 +76,22 @@ The animated gifs pictures below show versions of the app with required features
 <img src="https://media.giphy.com/media/ZgUUKIQBiV005rFCV6/giphy.gif" width=200 alt="Preview of final app with required features"><img src="https://i.imgur.com/krSawKa.gif" width=200 alt="Preview of final app with bonus features"><br>
 
 
-^^^
+
 <span style="font-size:1.25em; font-weight: 600"> Step 1. 🎬 Intro to Mobile App Development Course </span>
-^^^
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3FWui6JFYYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-^^^
+```
+https://www.youtube.com/embed/3FWui6JFYYk 
+```
 
-^^^
+
 <span style="font-size:1.25em; font-weight: 600"> Step 2. 🎬 Building the Required Features</span>
-^^^
-<iframe width="560" height="315" src="https://www.youtube.com/embed/563qLZdnqWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-^^^
+```
+https://www.youtube.com/embed/563qLZdnqWo
+```
 
-^^^
 <span style="font-size:1.25em; font-weight: 600"> (Optional) 🎬 Building the Bonus Features</span>
-^^^
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7F7fQwtGh6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-^^^
+```
+https://www.youtube.com/embed/7F7fQwtGh6s
+```
 
 ## 3. Submit your app for review
 
